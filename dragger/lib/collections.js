@@ -1,0 +1,1 @@
+Panels = new Mongo.Collection('panels');

@@ -1,0 +1,56 @@
+/* CSS declarations go here */
+body {
+	overflow:hidden;
+	font-family: 'American Typewriter'
+}
+ul {
+	list-style:none;
+	padding:0;
+}
+img {
+	max-width:100%;
+}
+.panel {
+	width:100vw;
+	height:100vh;
+	background-color: rgb(0, 141, 255);
+	position:absolute;
+	top:0;
+	right:0;
+	cursor:grab;
+}
+
+.target {
+	width:50vw;
+	margin-left:25%;
+	background-color: rgb(36, 119, 187);
+	padding:3vw;
+	color:white;
+	font-size: 150%;
+	position:absolute;
+	top:0;
+	left:0;
+	-webkit-transform:translateY(0);
+}
+nav {
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;	
+	background:rgba(0,0,0,.5);
+}
+
+nav ul {
+	display:flex;
+	flex-direction:row;
+}
+	nav ul li {
+		margin:0 0 0 2vw;
+		padding:1vw;
+		border-radius:1vw;
+		background:rgb(93, 212, 160);
+	}
+		nav ul li a {
+			color:#fff;
+			text-decoration:none;
+		}
