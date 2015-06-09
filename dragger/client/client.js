@@ -19,7 +19,10 @@ Template.remote.gestures({
 	    /* `this` is the data context of the element in your template */
 	    var currentPos,
 	        panel = Panels.findOne(); 
+
+	        console.log(panel.position);
 	         
+	    
 	    currentPos = event.deltaY * 2;
 	    Meteor.call('setPosition', panel._id, currentPos);
 
@@ -38,7 +41,4 @@ Template.remote.gestures({
 	    Meteor.call('setPosition', panel._id, currentPos);
 	}
 });
-
-
-
 
